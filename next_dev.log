@@ -1,0 +1,2006 @@
+
+> oman-laundry-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.7 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.43:3000
+- Environments: .env
+✓ Ready in 237ms
+
+[browser] ./src/proxy.ts
+Proxy is missing expected function export name
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy 
+[browser] ./src/proxy.ts
+Proxy is missing expected function export name
+This function is what Next.js runs for every request handled by this proxy (previously called middleware).
+
+Why this happens:
+- You are migrating from `middleware` to `proxy`, but haven't updated the exported function.
+- The file exists but doesn't export a function.
+- The export is not a function (e.g., an object or constant).
+- There's a syntax error preventing the export from being recognized.
+
+To fix it:
+- Ensure this file has either a default or "proxy" function export.
+
+Learn more: https://nextjs.org/docs/messages/middleware-to-proxy 
+ GET /login?redirect=%2Fdashboard 200 in 399ms (next.js: 303ms, application-code: 97ms)
+✓ Compiled in 5ms
+ GET /login 200 in 52ms (next.js: 7ms, application-code: 45ms)
+ GET /login 200 in 49ms (next.js: 4ms, application-code: 45ms)
+ GET /login?redirect=%2Fbook 200 in 35ms (next.js: 3ms, application-code: 32ms)
+ GET /login 200 in 46ms (next.js: 3ms, application-code: 43ms)
+[browser] A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components 
+ GET /admin 200 in 273ms (next.js: 258ms, application-code: 15ms)
+✓ Compiled in 43ms
+ GET / 200 in 275ms (next.js: 241ms, application-code: 34ms)
+ GET /login 200 in 50ms (next.js: 7ms, application-code: 43ms)
+ POST /login 200 in 32ms (next.js: 6ms, application-code: 26ms)
+  └─ ƒ signupUser("maju", "0987765433", "sohar") in 6ms src/app/actions.ts
+ GET /dashboard 200 in 277ms (next.js: 258ms, proxy.ts: 5ms, application-code: 14ms)
+ GET /dashboard 200 in 37ms (next.js: 2ms, proxy.ts: 3ms, application-code: 31ms)
+ GET /book 200 in 207ms (next.js: 183ms, proxy.ts: 3ms, application-code: 21ms)
+ POST /book 200 in 51ms (next.js: 6ms, proxy.ts: 8ms, application-code: 37ms)
+  └─ ƒ createOrder({"date":"2027-05-05","services":["Wash & Fold"]}) in 5ms src/app/actions.ts
+ GET /dashboard 200 in 63ms (next.js: 5ms, proxy.ts: 7ms, application-code: 51ms)
+ GET /book 200 in 47ms (next.js: 4ms, proxy.ts: 4ms, application-code: 39ms)
+ POST /book 200 in 47ms (next.js: 5ms, proxy.ts: 5ms, application-code: 37ms)
+  └─ ƒ createOrder({"date":"2027-03-05","services":["Wash & Fold"]}) in 4ms src/app/actions.ts
+✓ Compiled in 287ms
+ GET /book 200 in 145ms (next.js: 60ms, proxy.ts: 42ms, application-code: 42ms)
+ GET /book 200 in 29ms (next.js: 2ms, proxy.ts: 2ms, application-code: 25ms)
+ GET /book 200 in 34ms (next.js: 2ms, proxy.ts: 2ms, application-code: 30ms)
+ GET /book 200 in 38ms (next.js: 2ms, proxy.ts: 6ms, application-code: 30ms)
+ GET /book 200 in 32ms (next.js: 3ms, proxy.ts: 3ms, application-code: 27ms)
+ GET /book 200 in 25ms (next.js: 1167µs, proxy.ts: 1789µs, application-code: 22ms)
+ GET /book 200 in 29ms (next.js: 1194µs, proxy.ts: 3ms, application-code: 25ms)
+ GET /book 200 in 28ms (next.js: 1205µs, proxy.ts: 2ms, application-code: 24ms)
+ GET /book 200 in 23ms (next.js: 977µs, proxy.ts: 1380µs, application-code: 21ms)
+ GET /book 200 in 22ms (next.js: 977µs, proxy.ts: 1484µs, application-code: 20ms)
+ GET /book 200 in 25ms (next.js: 1008µs, proxy.ts: 2ms, application-code: 22ms)
+ GET /book 200 in 26ms (next.js: 1156µs, proxy.ts: 2ms, application-code: 23ms)
+ GET /book 200 in 22ms (next.js: 1159µs, proxy.ts: 1659µs, application-code: 19ms)
+ GET /book 200 in 21ms (next.js: 1205µs, proxy.ts: 1396µs, application-code: 18ms)
+ GET /book 200 in 22ms (next.js: 1312µs, proxy.ts: 1544µs, application-code: 19ms)
+ GET /book 200 in 12ms (next.js: 1328µs, proxy.ts: 2ms, application-code: 9ms)
+✓ Compiled in 13ms
+ GET /book 200 in 97ms (next.js: 12ms, proxy.ts: 9ms, application-code: 77ms)
+ GET /book 200 in 50ms (next.js: 4ms, proxy.ts: 5ms, application-code: 42ms)
+ GET /book 200 in 47ms (next.js: 1991µs, proxy.ts: 3ms, application-code: 42ms)
+ POST /book 200 in 49ms (next.js: 5ms, proxy.ts: 5ms, application-code: 39ms)
+  └─ ƒ createOrder({"address":"mecca","date":"2027-04-04","services":["Wash & Fold"]}) in 8ms src/app/actions.ts
+ GET /dashboard 200 in 78ms (next.js: 25ms, proxy.ts: 9ms, application-code: 44ms)
+ GET /book 200 in 47ms (next.js: 3ms, proxy.ts: 4ms, application-code: 40ms)
+ POST /book 200 in 44ms (next.js: 6ms, proxy.ts: 8ms, application-code: 30ms)
+  └─ ƒ createOrder({"address":"","date":"2027-02-22","services":["Wash & Fold"]}) in 3ms src/app/actions.ts
+ GET /dashboard 200 in 57ms (next.js: 5ms, proxy.ts: 5ms, application-code: 48ms)
+ GET / 200 in 101ms (next.js: 26ms, application-code: 74ms)
+ GET /login 200 in 65ms (next.js: 25ms, application-code: 39ms)
+ GET /admin 200 in 46ms (next.js: 25ms, application-code: 20ms)
+ POST /admin 200 in 31ms (next.js: 4ms, application-code: 27ms)
+  └─ ƒ updateOrderStatus("ORD-190", "In Progress", 60) in 2ms src/app/actions.ts
+ GET / 200 in 52ms (next.js: 6ms, application-code: 45ms)
+ GET /login 200 in 65ms (next.js: 4ms, application-code: 60ms)
+ POST /login 200 in 37ms (next.js: 3ms, application-code: 34ms)
+  └─ ƒ signupUser("ahijith", "0071", "muscat") in 4ms src/app/actions.ts
+ GET /dashboard 200 in 20ms (next.js: 2ms, proxy.ts: 3ms, application-code: 15ms)
+ GET /dashboard 200 in 20ms (next.js: 1749µs, proxy.ts: 3ms, application-code: 15ms)
+ GET /book 200 in 49ms (next.js: 4ms, proxy.ts: 4ms, application-code: 40ms)
+ POST /book 200 in 25ms (next.js: 6ms, proxy.ts: 4ms, application-code: 15ms)
+  └─ ƒ createOrder({"address":"sohar","date":"2027-02-23","services":["Wash & Fold","Ironing Only"]}) in 2ms src/app/actions.ts
+ GET /dashboard 200 in 52ms (next.js: 4ms, proxy.ts: 3ms, application-code: 45ms)
+ GET / 200 in 89ms (next.js: 4ms, application-code: 85ms)
+ GET /login 200 in 42ms (next.js: 4ms, application-code: 38ms)
+ GET /admin 200 in 29ms (next.js: 5ms, application-code: 24ms)
+ POST /admin 200 in 49ms (next.js: 7ms, application-code: 42ms)
+  └─ ƒ updateOrderStatus("ORD-4183", "In Progress", 34) in 4ms src/app/actions.ts
+ GET / 200 in 52ms (next.js: 5ms, application-code: 48ms)
+ GET /login 200 in 45ms (next.js: 4ms, application-code: 41ms)
+ POST /login 200 in 33ms (next.js: 3ms, application-code: 30ms)
+  └─ ƒ loginUser("0071") in 5ms src/app/actions.ts
+ GET /dashboard 200 in 22ms (next.js: 3ms, proxy.ts: 3ms, application-code: 15ms)
+ GET /dashboard 200 in 21ms (next.js: 1913µs, proxy.ts: 4ms, application-code: 15ms)
+ GET / 200 in 50ms (next.js: 7ms, application-code: 42ms)
+ GET /login 200 in 70ms (next.js: 4ms, application-code: 66ms)
+ GET /admin 200 in 29ms (next.js: 5ms, application-code: 24ms)
+ POST /admin 200 in 31ms (next.js: 3ms, application-code: 28ms)
+  └─ ƒ updateOrderStatus("ORD-4183", "Delivered", 34) in 3ms src/app/actions.ts
+ GET / 200 in 46ms (next.js: 3ms, application-code: 42ms)
+ GET /login 200 in 49ms (next.js: 4ms, application-code: 45ms)
+ POST /login 200 in 30ms (next.js: 3ms, application-code: 27ms)
+  └─ ƒ loginUser("0071") in 2ms src/app/actions.ts
+ GET /dashboard 200 in 24ms (next.js: 3ms, proxy.ts: 3ms, application-code: 18ms)
+ GET /dashboard 200 in 21ms (next.js: 1759µs, proxy.ts: 4ms, application-code: 15ms)
+ GET / 200 in 45ms (next.js: 4ms, application-code: 40ms)
+ GET /book 200 in 73ms (next.js: 3ms, proxy.ts: 6ms, application-code: 64ms)
+ GET /book 200 in 48ms (next.js: 5ms, proxy.ts: 5ms, application-code: 38ms)
+ GET /book 200 in 46ms (next.js: 3ms, proxy.ts: 4ms, application-code: 39ms)
+ GET /book 200 in 50ms (next.js: 2ms, proxy.ts: 4ms, application-code: 44ms)
+ GET /book 200 in 46ms (next.js: 5ms, proxy.ts: 4ms, application-code: 36ms)
+ POST /book 200 in 32ms (next.js: 3ms, proxy.ts: 4ms, application-code: 26ms)
+  └─ ƒ createOrder({"address":"","date":"2027-02-22","services":["Wash & Fold"]}) in 4ms src/app/actions.ts
+ GET /dashboard 200 in 97ms (next.js: 4ms, proxy.ts: 5ms, application-code: 88ms)
+ GET / 200 in 53ms (next.js: 6ms, application-code: 46ms)
+✓ Compiled in 177ms
+ GET / 200 in 170ms (next.js: 71ms, application-code: 99ms)
+ GET / 200 in 47ms (next.js: 4ms, application-code: 44ms)
+ GET / 200 in 35ms (next.js: 3ms, application-code: 32ms)
+ GET / 200 in 33ms (next.js: 971µs, application-code: 32ms)
+ GET / 200 in 43ms (next.js: 1060µs, application-code: 42ms)
+ GET / 200 in 33ms (next.js: 1713µs, application-code: 32ms)
+ GET / 200 in 32ms (next.js: 1643µs, application-code: 31ms)
+ GET / 200 in 31ms (next.js: 1135µs, application-code: 30ms)
+ GET / 200 in 30ms (next.js: 952µs, application-code: 29ms)
+ GET / 200 in 30ms (next.js: 1092µs, application-code: 29ms)
+ GET / 200 in 22ms (next.js: 851µs, application-code: 22ms)
+ GET / 200 in 30ms (next.js: 1064µs, application-code: 29ms)
+ GET / 200 in 28ms (next.js: 1331µs, application-code: 27ms)
+ GET / 200 in 31ms (next.js: 1285µs, application-code: 30ms)
+ GET / 200 in 21ms (next.js: 1019µs, application-code: 20ms)
+ GET / 200 in 13ms (next.js: 1523µs, application-code: 11ms)
+✓ Compiled in 379ms
+ GET / 200 in 117ms (next.js: 49ms, application-code: 68ms)
+ GET / 200 in 440ms (next.js: 276ms, application-code: 164ms)
+ GET / 200 in 17ms (next.js: 1507µs, application-code: 16ms)
+ GET / 200 in 125ms (next.js: 66ms, application-code: 58ms)
+ GET /book 200 in 106ms (next.js: 20ms, proxy.ts: 59ms, application-code: 28ms)
+ GET /book 200 in 51ms (next.js: 4ms, proxy.ts: 5ms, application-code: 42ms)
+ GET / 200 in 52ms (next.js: 5ms, application-code: 47ms)
+ GET / 200 in 41ms (next.js: 2ms, application-code: 39ms)
+ GET / 200 in 28ms (next.js: 1586µs, application-code: 27ms)
+ GET / 200 in 42ms (next.js: 1579µs, application-code: 40ms)
+ GET / 200 in 26ms (next.js: 1385µs, application-code: 25ms)
+ GET / 200 in 46ms (next.js: 3ms, application-code: 43ms)
+ GET / 200 in 41ms (next.js: 3ms, application-code: 38ms)
+ GET /book 200 in 49ms (next.js: 4ms, proxy.ts: 5ms, application-code: 40ms)
+ GET /book 200 in 54ms (next.js: 6ms, proxy.ts: 6ms, application-code: 42ms)
+ POST /book 200 in 59ms (next.js: 4ms, proxy.ts: 14ms, application-code: 40ms)
+  └─ ƒ createOrder({"address":"ww","date":"2027-02-22","services":["Wash & Fold"]}) in 7ms src/app/actions.ts
+ GET /dashboard 200 in 91ms (next.js: 30ms, proxy.ts: 4ms, application-code: 57ms)
+✓ Compiled in 216ms
+ GET /dashboard 200 in 217ms (next.js: 66ms, proxy.ts: 46ms, application-code: 105ms)
+ GET /dashboard 200 in 97ms (next.js: 50ms, proxy.ts: 5ms, application-code: 42ms)
+ GET /dashboard 200 in 28ms (next.js: 4ms, proxy.ts: 2ms, application-code: 22ms)
+ GET /dashboard 200 in 112ms (next.js: 5ms, proxy.ts: 9ms, application-code: 98ms)
+✓ Compiled in 10ms
+ GET /book 200 in 76ms (next.js: 30ms, proxy.ts: 12ms, application-code: 33ms)
+ GET /dashboard 200 in 60ms (next.js: 8ms, proxy.ts: 7ms, application-code: 44ms)
+ GET /dashboard 200 in 43ms (next.js: 1605µs, proxy.ts: 2ms, application-code: 39ms)
+ GET /dashboard 200 in 74ms (next.js: 1354µs, proxy.ts: 2ms, application-code: 71ms)
+ GET /dashboard 200 in 42ms (next.js: 1694µs, proxy.ts: 1761µs, application-code: 39ms)
+ GET /dashboard 200 in 39ms (next.js: 1588µs, proxy.ts: 2ms, application-code: 35ms)
+ GET /dashboard 200 in 37ms (next.js: 1647µs, proxy.ts: 2ms, application-code: 33ms)
+ GET /dashboard 200 in 37ms (next.js: 1362µs, proxy.ts: 5ms, application-code: 30ms)
+ GET /dashboard 200 in 35ms (next.js: 1515µs, proxy.ts: 2ms, application-code: 31ms)
+ POST /dashboard 200 in 36ms (next.js: 3ms, proxy.ts: 5ms, application-code: 28ms)
+  └─ ƒ logoutUser() in 3ms src/app/actions.ts
+ GET / 200 in 48ms (next.js: 21ms, application-code: 27ms)
+ GET /login 200 in 65ms (next.js: 25ms, application-code: 39ms)
+ GET /login?redirect=%2Fbook 200 in 47ms (next.js: 8ms, application-code: 38ms)
+ GET /login?redirect=%2Fbook 200 in 39ms (next.js: 3ms, application-code: 36ms)
+ GET /login?redirect=%2Fbook 200 in 38ms (next.js: 2ms, application-code: 35ms)
+✓ Compiled in 113ms
+ GET /login?redirect=%2Fdashboard 200 in 54ms (next.js: 13ms, application-code: 41ms)
+ GET /login?redirect=%2Fdashboard 200 in 13ms (next.js: 1411µs, application-code: 12ms)
+✓ Compiled in 5ms
+ GET /login?redirect=%2Fdashboard 200 in 41ms (next.js: 6ms, application-code: 35ms)
+ GET /login?redirect=%2Fdashboard 200 in 37ms (next.js: 983µs, application-code: 36ms)
+ GET /login?redirect=%2Fdashboard 200 in 37ms (next.js: 1849µs, application-code: 35ms)
+ GET /login?redirect=%2Fdashboard 200 in 25ms (next.js: 922µs, application-code: 24ms)
+ GET /login?redirect=%2Fdashboard 200 in 12ms (next.js: 1052µs, application-code: 11ms)
+✓ Compiled in 26ms
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/login" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <html lang="en">
+                        <body className="outfit_ca3...">
+                          <Navbar>
+                            <nav className="navbar">
+                              <div className="container ...">
+                                <a href="/" className="logo">
++                                 {"💧 "}
+-                                 💧 Oman
+                                  ...
+                                ...
+                          ...
+                ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at a (<anonymous>)
+    at Navbar (src/components/Navbar.tsx:19:9)
+    at RootLayout (src/app/layout.tsx:24:9)
+  17 |     <nav className="navbar">
+  18 |       <div className="container nav-content">
+> 19 |         <a href="/" className="logo">
+     |         ^
+  20 |           💧 <span style={{ color: '#0055ff' }}>SIMS</span> <span style={{ color: '#ff3366...
+  21 |         </a>
+  22 |         {!hideButtons ? (
+[browser] Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <AppDevOverlayErrorBoundary globalError={[...]}>
+      <ReplaySsrOnlyErrors>
+      <DevRootHTTPAccessFallbackBoundary>
+        <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+          <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+            <RedirectBoundary>
+              <RedirectErrorBoundary router={{...}}>
+                <Head>
+                <__next_root_layout_boundary__>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <script>
+                    <script>
+                    <script>
+                    <RootLayout>
+                      <html lang="en">
+                        <body className="outfit_ca3...">
+                          <Navbar>
+                            <nav className="navbar">
+                              <div className="container ...">
+                                <a href="/" className="logo">
++                                 {"💧 "}
+-                                 💧 Oman
+                                  ...
+                                ...
+                          ...
+                ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at a (<anonymous>)
+    at Navbar (src/components/Navbar.tsx:19:9)
+    at RootLayout (src/app/layout.tsx:24:9)
+  17 |     <nav className="navbar">
+  18 |       <div className="container nav-content">
+> 19 |         <a href="/" className="logo">
+     |         ^
+  20 |           💧 <span style={{ color: '#0055ff' }}>SIMS</span> <span style={{ color: '#ff3366...
+  21 |         </a>
+  22 |         {!hideButtons ? (
+✓ Compiled in 23ms
+ GET / 200 in 69ms (next.js: 17ms, application-code: 52ms)
+ GET / 200 in 66ms (next.js: 2ms, application-code: 63ms)
+ GET / 200 in 38ms (next.js: 1660µs, application-code: 37ms)
+ GET / 200 in 35ms (next.js: 2ms, application-code: 33ms)
+ GET / 200 in 28ms (next.js: 1780µs, application-code: 27ms)
+ GET / 200 in 18ms (next.js: 4ms, application-code: 14ms)
+✓ Compiled in 32ms
+ GET / 200 in 35ms (next.js: 8ms, application-code: 27ms)
+ GET / 200 in 138ms (next.js: 91ms, application-code: 47ms)
+ GET /login?redirect=%2Fbook 200 in 45ms (next.js: 8ms, application-code: 36ms)
+ POST /login?redirect=%2Fbook 200 in 59ms (next.js: 17ms, application-code: 41ms)
+  └─ ƒ signupUser("Test User", "+968 0000 1111", "Test Address") in 8ms src/app/actions.ts
+ GET /book 200 in 32ms (next.js: 13ms, proxy.ts: 4ms, application-code: 16ms)
+ GET /book 200 in 31ms (next.js: 1152µs, proxy.ts: 3ms, application-code: 27ms)
+ POST /book 200 in 69ms (next.js: 11ms, proxy.ts: 19ms, application-code: 40ms)
+  └─ ƒ createOrder({"address":"","date":"2026-06-06","services":["Wash & Fold"]}) in 6ms src/app/actions.ts
+ GET /dashboard 200 in 96ms (next.js: 18ms, proxy.ts: 21ms, application-code: 57ms)
+ POST /dashboard 200 in 60ms (next.js: 16ms, proxy.ts: 14ms, application-code: 30ms)
+  └─ ƒ logoutUser() in 4ms src/app/actions.ts
+ GET / 200 in 48ms (next.js: 5ms, application-code: 43ms)
+ GET /login 200 in 42ms (next.js: 5ms, application-code: 38ms)
+ GET /admin 200 in 77ms (next.js: 43ms, application-code: 34ms)
+ GET /admin 200 in 149ms (next.js: 16ms, application-code: 134ms)
+ GET /admin 200 in 79ms (next.js: 15ms, application-code: 64ms)
+ POST /admin 200 in 74ms (next.js: 24ms, application-code: 50ms)
+  └─ ƒ updateOrderStatus("ORD-2125", "In Progress", 15) in 3ms src/app/actions.ts
+ POST /admin 200 in 48ms (next.js: 8ms, application-code: 40ms)
+  └─ ƒ updateOrderStatus("ORD-2125", "Delivered", 15) in 4ms src/app/actions.ts
+ POST /admin 200 in 54ms (next.js: 13ms, application-code: 41ms)
+  └─ ƒ logoutUser() in 3ms src/app/actions.ts
+ GET / 200 in 50ms (next.js: 12ms, application-code: 38ms)
+ GET /login 200 in 71ms (next.js: 13ms, application-code: 59ms)
+ POST /login 200 in 53ms (next.js: 9ms, application-code: 45ms)
+  └─ ƒ loginUser("+968 0000 1111") in 4ms src/app/actions.ts
+ GET /dashboard 200 in 26ms (next.js: 4ms, proxy.ts: 4ms, application-code: 17ms)
+ GET /dashboard 200 in 30ms (next.js: 6ms, proxy.ts: 5ms, application-code: 20ms)
+ POST /dashboard 200 in 81ms (next.js: 8ms, proxy.ts: 15ms, application-code: 58ms)
+  └─ ƒ logoutUser() in 2ms src/app/actions.ts
+ GET / 200 in 45ms (next.js: 9ms, application-code: 36ms)
+ GET /login 200 in 88ms (next.js: 13ms, application-code: 75ms)
+ POST /login 200 in 21ms (next.js: 3ms, application-code: 19ms)
+  └─ ƒ loginUser("0071") in 2ms src/app/actions.ts
+ GET /dashboard 200 in 17ms (next.js: 1971µs, proxy.ts: 2ms, application-code: 13ms)
+ GET /dashboard 200 in 22ms (next.js: 1798µs, proxy.ts: 3ms, application-code: 17ms)
+ POST /dashboard 200 in 19ms (next.js: 3ms, proxy.ts: 2ms, application-code: 15ms)
+  └─ ƒ logoutUser() in 2ms src/app/actions.ts
+ GET / 200 in 28ms (next.js: 4ms, application-code: 24ms)
+ GET /login?redirect=%2Fbook 200 in 24ms (next.js: 2ms, application-code: 22ms)
+ GET /admin 200 in 15ms (next.js: 3ms, application-code: 12ms)
+ GET /login 200 in 63ms (next.js: 22ms, application-code: 41ms)
+ GET /admin 200 in 51ms (next.js: 13ms, application-code: 38ms)
+ GET /admin 200 in 157ms (next.js: 13ms, application-code: 144ms)
+ GET /admin 200 in 83ms (next.js: 16ms, application-code: 67ms)
+ GET /admin 200 in 111ms (next.js: 21ms, application-code: 90ms)
+ GET /login 200 in 101ms (next.js: 26ms, application-code: 75ms)
+ GET /login 200 in 83ms (next.js: 21ms, application-code: 63ms)
+ GET /admin 200 in 56ms (next.js: 21ms, application-code: 36ms)
+✓ Compiled in 167ms
+ POST /admin 200 in 77ms (next.js: 28ms, application-code: 48ms)
+  └─ ƒ updateOrderStatus("ORD-8798", "In Progress", 10) in 5ms src/app/actions.ts
+ POST /admin 200 in 37ms (next.js: 3ms, application-code: 34ms)
+  └─ ƒ updateOrderStatus("ORD-1061", "In Progress", 20) in 1ms src/app/actions.ts
+✓ Compiled in 24ms
+ POST /admin 200 in 67ms (next.js: 23ms, application-code: 43ms)
+  └─ ƒ updateOrderStatus("ORD-8798", "Delivered", 10) in 3ms src/app/actions.ts
+ POST /admin 200 in 30ms (next.js: 3ms, application-code: 27ms)
+  └─ ƒ updateOrderStatus("ORD-10", "In Progress", 7) in 1ms src/app/actions.ts
+✓ Compiled in 15ms
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+ GET /login 200 in 711ms (next.js: 177ms, application-code: 534ms)
+ GET /admin 200 in 723ms (next.js: 31ms, application-code: 693ms)
+ GET /login 200 in 514ms (next.js: 503ms, application-code: 11ms)
+ GET /admin 500 in 657ms (next.js: 573ms, application-code: 84ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+ GET /login 200 in 559ms (next.js: 3ms, application-code: 556ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+ GET /admin 500 in 768ms (next.js: 398ms, application-code: 370ms)
+ GET /login 200 in 800ms (next.js: 1556µs, application-code: 798ms)
+ GET /admin 500 in 388ms (next.js: 382ms, application-code: 6ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+ GET /admin 500 in 389ms (next.js: 1883µs, application-code: 387ms)
+ GET /login 200 in 1188ms (next.js: 385ms, application-code: 803ms)
+ GET /login 200 in 445ms (next.js: 1569µs, application-code: 443ms)
+ GET /login 200 in 60ms (next.js: 5ms, application-code: 56ms)
+ GET /login 200 in 58ms (next.js: 7ms, application-code: 51ms)
+ GET /login 200 in 56ms (next.js: 4ms, application-code: 52ms)
+ GET /login 200 in 61ms (next.js: 3ms, application-code: 57ms)
+ GET /login 200 in 102ms (next.js: 3ms, application-code: 98ms)
+[browser] Uncaught PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (src/app/admin/page.tsx:39:1)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 |
+ GET /login 200 in 285ms (next.js: 2ms, application-code: 282ms)
+ GET /login 200 in 279ms (next.js: 3ms, application-code: 275ms)
+ GET /login 200 in 236ms (next.js: 7ms, application-code: 229ms)
+ GET /login 200 in 34ms (next.js: 3ms, application-code: 31ms)
+ GET /login 200 in 17ms (next.js: 2ms, application-code: 15ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /login 200 in 50ms (next.js: 29ms, application-code: 21ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+ GET /admin 500 in 391ms (next.js: 386ms, application-code: 5ms)
+ GET /login 200 in 83ms (next.js: 43ms, application-code: 40ms)
+ GET /login 200 in 28ms (next.js: 6ms, application-code: 22ms)
+ GET /login 200 in 99ms (next.js: 1452µs, application-code: 98ms)
+[browser] Uncaught PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (src/app/admin/page.tsx:39:1)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 |
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+✓ Compiled in 10ms
+ GET /admin 500 in 526ms (next.js: 521ms, application-code: 5ms)
+ GET /login 200 in 525ms (next.js: 506ms, application-code: 19ms)
+[browser] Uncaught PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (src/app/admin/page.tsx:39:1)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 |
+✓ Compiled in 38ms
+⨯ Error [PrismaClientConstructorValidationError]: Unknown property url provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   url: process.env.DATABASE_URL || "file:./dev.db"
+   9 | });
+  10 |
+⨯ Error [PrismaClientConstructorValidationError]: Unknown property url provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   url: process.env.DATABASE_URL || "file:./dev.db"
+   9 | });
+  10 | {
+  page: '/admin'
+}
+ GET /admin 500 in 524ms (next.js: 515ms, application-code: 10ms)
+ GET /login 200 in 585ms (next.js: 7ms, application-code: 578ms)
+ GET /login 200 in 70ms (next.js: 1373µs, application-code: 68ms)
+ GET /login 200 in 64ms (next.js: 2ms, application-code: 61ms)
+ GET /login 200 in 37ms (next.js: 1998µs, application-code: 35ms)
+ GET /login 200 in 86ms (next.js: 2ms, application-code: 84ms)
+[browser] Uncaught PrismaClientConstructorValidationError: Unknown property url provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (src/app/admin/page.tsx:39:1)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   url: process.env.DATABASE_URL || "file:./dev.db"
+   9 | });
+  10 |
+⨯ Error [PrismaClientConstructorValidationError]: Unknown property datasources provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   datasources: {
+   9 |     db: {
+  10 |       url: process.env.DATABASE_URL || "file:./dev.db"
+⨯ Error [PrismaClientConstructorValidationError]: Unknown property datasources provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   datasources: {
+   9 |     db: {
+  10 |       url: process.env.DATABASE_URL || "file:./dev.db" {
+  page: '/admin'
+}
+✓ Compiled in 25ms
+ GET /admin 500 in 433ms (next.js: 427ms, application-code: 6ms)
+ GET /login 200 in 471ms (next.js: 412ms, application-code: 59ms)
+ GET /login 200 in 53ms (next.js: 3ms, application-code: 49ms)
+ GET /login 200 in 42ms (next.js: 1531µs, application-code: 40ms)
+ GET /login 200 in 35ms (next.js: 2ms, application-code: 33ms)
+ GET /login 200 in 27ms (next.js: 1993µs, application-code: 25ms)
+[browser] Uncaught PrismaClientConstructorValidationError: Unknown property datasources provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (src/app/admin/page.tsx:39:1)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   datasources: {
+   9 |     db: {
+  10 |       url: process.env.DATABASE_URL || "file:./dev.db"
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+    ./src/app/admin/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+    ./src/app/admin/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+ GET /login 500 in 97ms (next.js: 74ms, application-code: 23ms)
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+    ./src/app/admin/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /login 500 in 24ms (next.js: 11ms, application-code: 13ms)
+ GET /admin 500 in 48ms (next.js: 28ms, application-code: 20ms)
+ GET /login 500 in 44ms (next.js: 29ms, application-code: 15ms)
+⨯ ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+[31m[1m>[0m [90m1 |[0m [36mimport[0m { [33mPrismaClient[0m } [36mfrom[0m [32m'@prisma/client'[0m;
+  [90m  |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m2 |[0m
+  [90m3 |[0m [36mconst[0m globalForPrisma = globalThis [36mas[0m unknown [36mas[0m {
+  [90m4 |[0m   prisma: [33mPrismaClient[0m | [36mundefined[0m;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ GET /login 500 in 41ms (next.js: 30ms, application-code: 10ms)
+[browser] Uncaught Error: ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/lib/db.ts:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/lib/db.ts:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+    ./src/app/admin/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] Uncaught Error: ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (Error: ./src/lib/db.ts:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (Error: (./src/lib/db.ts:1:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+    ./src/app/admin/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/dashboard/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+[browser] ./src/lib/db.ts:1:1
+Module not found: Can't resolve '@prisma/client'
+> 1 | import { PrismaClient } from '@prisma/client';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const globalForPrisma = globalThis as unknown as {
+  4 |   prisma: PrismaClient | undefined;
+
+Import trace:
+  Server Component:
+    ./src/lib/db.ts
+    ./src/app/actions.ts
+
+https://nextjs.org/docs/messages/module-not-found 
+✓ Compiled in 124ms
+⨯ Error [PrismaClientConstructorValidationError]: Unknown property datasources provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   datasources: {
+   9 |     db: {
+  10 |       url: process.env.DATABASE_URL || "file:./dev.db"
+⨯ Error [PrismaClientConstructorValidationError]: Unknown property datasources provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   datasources: {
+   9 |     db: {
+  10 |       url: process.env.DATABASE_URL || "file:./dev.db" {
+  page: '/admin'
+}
+ GET /admin 500 in 731ms (next.js: 679ms, application-code: 52ms)
+ GET /login 200 in 730ms (next.js: 544ms, application-code: 185ms)
+[browser] Uncaught PrismaClientConstructorValidationError: Unknown property datasources provided to PrismaClient constructor.
+Read more at https://pris.ly/d/client-constructor
+    at module evaluation (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (src/app/admin/page.tsx:39:1)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient({
+     |                                      ^
+   8 |   datasources: {
+   9 |     db: {
+  10 |       url: process.env.DATABASE_URL || "file:./dev.db"
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+ GET /admin 500 in 393ms (next.js: 6ms, application-code: 388ms)
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+⨯ Error [PrismaClientInitializationError]: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (.next/dev/server/chunks/ssr/[root-of-the-server]__0hkl268._.js:242:47)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 | {
+  clientVersion: '7.8.0',
+  errorCode: undefined,
+  retryable: undefined,
+  page: '/admin'
+}
+ GET /admin 500 in 350ms (next.js: 346ms, application-code: 5ms)
+ GET /login 200 in 77ms (next.js: 4ms, application-code: 73ms)
+ GET /login 200 in 71ms (next.js: 3ms, application-code: 68ms)
+ GET /login 200 in 47ms (next.js: 2ms, application-code: 45ms)
+ GET /login 200 in 38ms (next.js: 1981µs, application-code: 36ms)
+ GET /login 200 in 30ms (next.js: 4ms, application-code: 26ms)
+[browser] Uncaught PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+
+```
+new PrismaClient({
+  ...
+})
+```
+
+or
+
+```
+constructor() {
+  super({ ... });
+}
+```
+          
+    at Module.eval (src/lib/db.ts:7:38)
+    at module evaluation (src/app/actions.ts:3:1)
+    at module evaluation (src/app/admin/page.tsx:1:1)
+    at module evaluation (src/app/admin/page.tsx:39:1)
+   5 | };
+   6 |
+>  7 | const db = globalForPrisma.prisma ?? new PrismaClient();
+     |                                      ^
+   8 |
+   9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;
+  10 |
