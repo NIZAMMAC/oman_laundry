@@ -1,6 +1,7 @@
 "use client";
 
-import { useTransition, useState } from 'react';
+import { useTransition, useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { updateOrderStatus, Order } from '../actions';
 
 type AdminOrder = Order & { customerName: string; customerPhone: string };
@@ -13,6 +14,9 @@ export default function AdminOrdersTable({ initialOrders }: { initialOrders: Adm
 
   const [filterStatus, setFilterStatus] = useState<string>('All');
   const [sortBy, setSortBy] = useState<string>('newest');
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   const handleSetPrice = () => {
     if (!promptOrderId) return;
@@ -163,7 +167,7 @@ export default function AdminOrdersTable({ initialOrders }: { initialOrders: Adm
       </div>
 
       {/* Set Price Modal */}
-      {promptOrderId && (
+      {mounted && promptOrderId && createPortal(
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '15vh', zIndex: 1000 }}>
           <div className="glass-card animate-fade-in" style={{ padding: '2rem', width: '100%', maxWidth: '400px' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem' }}>Set Order Price</h3>
@@ -180,11 +184,12 @@ export default function AdminOrdersTable({ initialOrders }: { initialOrders: Adm
               <button className="btn-primary" onClick={handleSetPrice} disabled={isPending || !promptPrice}>Confirm & Accept</button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       {/* Confirm Delivery Modal */}
-      {confirmDeliveryId && (
+      {mounted && confirmDeliveryId && createPortal(
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '15vh', zIndex: 1000 }}>
           <div className="glass-card animate-fade-in" style={{ padding: '2rem', width: '100%', maxWidth: '400px' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem' }}>Confirm Delivery</h3>
@@ -194,7 +199,8 @@ export default function AdminOrdersTable({ initialOrders }: { initialOrders: Adm
               <button className="btn-primary" onClick={handleConfirmDelivery} disabled={isPending} style={{ background: '#10b981', boxShadow: 'none' }}>Yes, Deliver</button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
